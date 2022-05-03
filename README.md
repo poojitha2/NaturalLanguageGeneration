@@ -15,12 +15,10 @@ You can install the following packages using following command
 
 pip install - <<packageame>>
 
-## Pipeline for quick start.
-All raw data are in Archive_data.csv , Latest_data.csv where it is used to split data into Train and Test data.
+## Dataset
+We used [webNLG](https://gitlab.com/shimorina/webnlg-dataset) data for our project as it is open source and contains lot of RDF Verbalisers.
 
-Or you want to download the dataset by yourself, then you can go to https://challenger.ai/competition/wf2018. to downlowd 2 datasets (You can switch to English from top-right corner):
-
-**Train Models**
+  **Train Models**
 We used DecisionTreeRegressor machine learning algorithms to train the data set.
 
 ## What is Decision tree
