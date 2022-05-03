@@ -13,7 +13,7 @@ We used python 3.10 and jupyter notebbok for the implementation. Operating syste
 
 You can install the following packages using following command
 
-pip install - <<packageName>>
+pip install - <<packageame>>
 
 ## Pipeline for quick start.
 All raw data are in Archive_data.csv , Latest_data.csv where it is used to split data into Train and Test data.
