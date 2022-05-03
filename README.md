@@ -13,7 +13,7 @@ We used python 3.10 and jupyter notebbok for the implementation. Operating syste
 
 You can install the following packages using following command
 
-pip install - <<packageame>>
+pip install - <<packageName>>
 
 ## Dataset
 We used [webNLG](https://gitlab.com/shimorina/webnlg-dataset) data for our project as it is open source and contains lot of RDF Verbalisers.
