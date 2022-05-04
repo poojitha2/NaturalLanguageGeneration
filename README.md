@@ -35,18 +35,18 @@ RDF values. Next, we had to preprocess the data. To do this we had to make these
 	
 1.	Create a 2D array from the mtriple column using the character “|”. 
      - a.	Aarhus_Airport | cityServed | "Aarhus, Denmark"
-     b.	[“Aarhus_Airport”, “cityServed”, “Aarhus, Denmark”]
+     - b.	[“Aarhus_Airport”, “cityServed”, “Aarhus, Denmark”]
 2.	Add space at the capital in the 2nd term. This allows us to better replicate the sentence structure of the lex column.
-     a.	cityServed -> city Served
+     - a.	cityServed -> city Served
 3.	Removed unnecessary characters in both columns
-     a.	Ex: ,_:@#?!&$]
+     - a.	Ex: ,_:@#?!&$]
 4.	Convert both columns to lowercase.
 5.	Randomize records and then split between train and test
 6.	Train the RNN LSTM on the Lex column in the training set.
 7.	Generate a sentence from each mtriple by following these steps:
-     a.	Generate the next word after the first mtriple value.
-     b.	Generate the next word after the second mtriple value.
-     c.	Combine the first two generated phrases with the third mtriple in order to form a final sentence.
+     - a.	Generate the next word after the first mtriple value.
+     - b.	Generate the next word after the second mtriple value.
+     - c.	Combine the first two generated phrases with the third mtriple in order to form a final sentence.
 
 8.	Run the test set of mtriples through the model and compare the generated sentence to the lex sentence. 
 9.	Compute the Bleu Score, F-Score, Precision, and Recall.
@@ -62,6 +62,7 @@ Aarhus airport is located is tirstrup.
 Web NLG:
 Aarhus airport is located in tirstrup.
 As you can see, our model is close to generating text as well as the Web NLG dataset. This is only one example though. Some of our results are the exact same as the provided test data, while some of them differ greatly. On average though, our accuracies are as listed below:
+	
  ![image](https://user-images.githubusercontent.com/52190564/166804959-b7d7d831-bf37-4f23-a82f-cc8e0fa260ef.png)
 	
 We achieved this level of accuracy by utilizing the below RNN LSTM:
