@@ -34,7 +34,7 @@ Our goal with this dataset was to generate text using RDF triples and a RNN LSTM
 RDF values. Next, we had to preprocess the data. To do this we had to make these changes:
 	
 1.	Create a 2D array from the mtriple column using the character “|”. 
-     a.	Aarhus_Airport | cityServed | "Aarhus, Denmark"
+     - a.	Aarhus_Airport | cityServed | "Aarhus, Denmark"
      b.	[“Aarhus_Airport”, “cityServed”, “Aarhus, Denmark”]
 2.	Add space at the capital in the 2nd term. This allows us to better replicate the sentence structure of the lex column.
      a.	cityServed -> city Served
