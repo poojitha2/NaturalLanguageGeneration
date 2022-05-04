@@ -63,11 +63,14 @@ Web NLG:
 Aarhus airport is located in tirstrup.
 As you can see, our model is close to generating text as well as the Web NLG dataset. This is only one example though. Some of our results are the exact same as the provided test data, while some of them differ greatly. On average though, our accuracies are as listed below:
  ![image](https://user-images.githubusercontent.com/52190564/166804959-b7d7d831-bf37-4f23-a82f-cc8e0fa260ef.png)
+	
 We achieved this level of accuracy by utilizing the below RNN LSTM:
+	
  ![image](https://user-images.githubusercontent.com/52190564/166805216-dab2fdb6-276c-46db-b36a-b7fbb9bc9ee1.png)
  ![image](https://user-images.githubusercontent.com/52190564/166805304-6bc620de-98b1-4732-80db-b73180ade6f6.png)
 
 With the sentences we generated from this model, we were also able to create a summary of the sentences. You will find this below:
+	
  ![image](https://user-images.githubusercontent.com/52190564/166805392-775a95bb-5fee-4a1a-b0f2-ae72dcf79259.png)
 
  
